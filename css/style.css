@@ -1,0 +1,138 @@
+/* Header Navigation */
+header {
+  background-color: #d3bce3;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+/* Main Container */
+.container {
+  position: relative;
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Header Info */
+.header {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-size: 13px;
+}
+
+/* Card-style Intro Section */
+.intro-card {
+  background-color: rgba(220, 23, 23, 0.1);
+  border-radius: 16px;
+  padding: 30px 20px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.portfolio-text {
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+.signature {
+  font-family: 'Great Vibes', cursive;
+  font-size: 32px;
+  margin-top: -10px;
+}
+
+/* Sparkles Decoration */
+.sparkles {
+  background-image: url('../assets/bella_2.png');
+  background-repeat: no-repeat;
+  background-position: top center; /* naik ke atas */
+  background-size: contain;        /* pastikan tidak terpotong */
+  width: 100%;
+  height: 200px;                   /* tambahkan tinggi agar gambar muat */
+  margin-top: -50px;                 /* hilangkan jarak atas agar lebih naik */
+  margin-bottom: -20px;            /* opsional: tarik ke atas jika perlu overlap */
+}
+
+/* Social Icons */
+.socials {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.socials div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Footer */
+footer {
+  background-color: #d3bce3;
+  text-align: center;
+  padding: 15px;
+  font-size: 13px;
+}
+
+img {
+  width: 16px;
+  height: 16px;
+}
+
+/* Grid Foto di About Me */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
